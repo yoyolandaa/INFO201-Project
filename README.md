@@ -1,5 +1,5 @@
 # INFO201-Project-Summary
-![image](https://github.com/Hruiitanggg/INFO201-Project-Summary/assets/152325167/d7ada47a-29d5-4387-bc72-4b47813ffbe2)
+![image](https://github.com/Hruiitanggg/INFO201-Project-Summary/assets/152325167/d1dec5ea-44c0-474c-b2d3-1881d957efce)
 
 We are conducting a comprehensive analysis and exploration of the decision-making process faced by individuals after college, particularly the choice between pursuing a graduate degree or entering the workforce. This is a topic that has been full of hot debate among peers, and behind making the choice are a lot of different factors to take into account, finances, personal preference, value for money, time, and other considerations, as we hope to help a lot of younger people who have a harder time deciding between the two by focusing on data of employment rates at different levels of education and different ages. We hope it would be beneficial to undergraduate students and have a reference backed up by real statistics. In this storyline, we created Jamie's situation as the storyline character to understand the challenges and opportunities of each choice.
 
