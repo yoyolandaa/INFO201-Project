@@ -1,0 +1,204 @@
+---
+title: "Final project"
+author: "Christine, Allison, Yolanda"
+date: "2023-12-03"
+output:
+  html_document: default
+  pdf_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(dplyr)
+library(ggplot2)
+options(warn = -1)
+```
+
+# Introduction
+The topic of deciding between pursuing graduate studies or entering the workforce post-undergraduate has garnered increasing attention in recent years. This is primarily due to a growing perception that academic qualifications no longer necessarily correlate with salary levels in today's competitive job market. Many individuals now argue that practical job experience holds greater significance, as employers are inclined to favor candidates who have not only academic prowess but also real-world skills and a matured understanding of societal dynamics.
+
+On the contrary, some individuals contend that the pursuit of a graduate degree offers more than just academic growth. They posit that continuing education provides an opportunity to further develop oneself, both intellectually and personally, beyond the constraints of immediate employment. This perspective challenges the notion that immediate entry into the workforce is the only pathway to societal engagement.
+
+This dichotomy between gaining practical experience and pursuing further academic qualifications creates a considerable dilemma for undergraduates. The fear of devaluation of academic credentials and the desire for immediate societal integration pulls individuals towards employment, while the allure of continued academic pursuits and personal growth may encourage them to embark on a graduate journey.
+
+Exploring the pros and cons of each option systematically and professionally becomes crucial in helping individuals navigate this decision-making process. By providing insights into the predominant influences and potential outcomes, careful deliberation on this topic can serve as a valuable reference for those facing this critical decision. It not only addresses the contemporary challenges in the job market but also delves into the personal and intellectual aspects that shape an individual's trajectory after graduation.
+
+We gained insights and more prospects shared in the article by Annie Mueller on Investopedia regarding the ongoing debate between work experience and education. Mueller emphasizes that academic success indicates proficiency in learning and thriving within an academic setting but does not necessarily guarantee success in real-world job scenarios. She underscores the multifaceted nature of success in the job market, which demands a combination of various factors.
+
+Mueller presents compelling statistics indicating that individuals with a bachelor's degree had a median weekly earnings of $1,334 in 2021, compared to $809 for those with a high school diploma. Additionally, a report from the Association of American Colleges and Universities highlights that 82% of executives and 75% of hiring managers surveyed consider higher education completion as crucial for individuals in today's professional landscape.
+
+Maintaining an impartial stance on this decision, I acknowledge that there are additional factors influencing students' choices, especially during the pandemic. The global economic downturn resulted in widespread salary reductions and layoffs. Examining the unemployment rates across various U.S. states in 2020 reveals a stark reality, with states like Arizona, Arkansas, Delaware, Idaho, and Indiana experiencing historically high average unemployment rates of 14%. This economic uncertainty adds a layer of complexity to the decision-making process for students, who must weigh the potential benefits of continuing education against immediate financial concerns. For many, substantial student loans and diverse socioeconomic backgrounds further contribute to the careful consideration of entering the job market versus pursuing graduate studies.
+
+Firstly, let's examine the impact of age on employment rates and whether disparities exist across age groups. Are younger individuals encountering more significant challenges in securing employment compared to their middle-aged and older counterparts? This exploration can unveil the distinct hurdles and opportunities each age demographic faces in the dynamic job market. Secondly, we delve into the correlation between educational attainment and job market success. Does possessing higher education contribute to enhanced job security and increased income levels? Unraveling this narrative will shed light on the pivotal role education plays in shaping job prospects and overall career trajectories. Moving on, a global comparative analysis becomes imperative. How do trends in employment and education differ across countries? Does the attainment of tertiary education universally ensure improved employment prospects, or are there cultural, economic, and educational factors influencing outcomes in various regions? Lastly, we scrutinize the policy implications stemming from these trends. What do these patterns signify for education and labor market policies? How can governments and educational institutions adapt their strategies to effectively prepare individuals for the evolving job landscape? This comprehensive exploration aims to provide insights into the multifaceted dynamics of employment across age groups, educational backgrounds, global contexts, and the ensuing policy considerations.
+  
+# Story-Line:
+Meet Jamie, a junior undergraduate at a crossroads as he navigates the halfway point of college life. With a major in computer science, Jamie faces the pivotal decision of whether to pursue graduate school or enter the workforce. Listening to advice from older siblings and those who've been in his shoes, Jamie understands that even as an undergraduate in computer science, employment opportunities are abundant. His skills are commendable, and he's set his sights on a Google SWE internship in his third year. However, with family finances in the middle range and the added burden of international student tuition fees, Jamie feels the weight of this decision. The prospect of an additional year of consumption adds to his concerns, although he's not at the point of financial strain. Complicating matters, Jamie hears that in the field of computer science, having a graduate degree may not be paramount if he plans to leave the U.S., yet it remains an advantage. The dilemma lies in whether two extra years of study are worth the investment or if opting for two years of work experience would be more advantageous. Jamie finds himself caught in the balance, uncertain of the best path forward. As he contemplates his decision, several factors come into play, each influencing the complex web of considerations he must weigh.
+
+Factors:
+Jamie confronts a multifaceted decision-making process as he contemplates the next phase of his academic and professional journey. Financial considerations weigh heavily on his mind, with the immediate financial benefits of securing a job contrasting with the potential long-term gains associated with obtaining a graduate degree. The burden of tuition fees, especially as an international student, adds a layer of complexity to this aspect of his decision. Simultaneously, Jamie delves into the impact each option might have on his career trajectory and opportunities for advancement, pondering whether two years of work experience will surpass the advantages offered by an additional degree.
+
+Personal passion emerges as a pivotal factor in Jamie's deliberations, prompting reflection on whether pursuing higher education aligns more closely with his personal and professional aspirations, or if gaining practical experience through employment holds greater fulfillment. The relevance of Jamie's computer science major to the job market is a key consideration, as he contemplates how the skills acquired during his undergraduate studies will fare in the competitive landscape and whether further specialization through graduate education is necessary.
+
+The practical value of gaining two years of work experience is a significant factor in Jamie's decision-making. He considers whether real-world exposure in the industry will prove more advantageous than spending additional time in an academic setting, especially given the competitive edge provided by his Google SWE internship experience. Additionally, Jamie acknowledges his immediate financial needs, recognizing that an additional year of study may exacerbate financial pressures for both himself and his family. In navigating these considerations, Jamie grapples with a nuanced decision that encompasses financial, career-oriented, personal, and immediate factors, each playing a crucial role in shaping his path forward.
+
+Jamie's situation, as detailed in the preceding section, holds significance for young individuals navigating decisions post-undergraduate studies. This data analysis serves as a valuable resource, providing a comprehensive and realistic portrayal of the challenges encountered by those standing at the crossroads of their career journey. By delving into essential factors such as financial considerations, potential career trajectories, and personal passions, this report offers clear insights into the advantages and disadvantages of opting for a graduate degree versus directly entering the workforce.
+
+For readers, particularly students in similar predicaments, the report becomes a guiding compass, offering nuanced perspectives and new considerations in decision-making. While there may not be a universally correct path, arming oneself with knowledge about the challenges and opportunities inherent in each option proves invaluable. Understanding the intricate details of the job market, especially in fields like computer science, equips students like Jamie with the foresight needed to make informed decisions.
+
+The report goes beyond a mere examination of Jamie's situation; it serves as a broader tool for individuals facing pivotal choices after completing their undergraduate education. By providing primary and professional information, the report empowers readers to approach decision-making with a clearer understanding of the real-world implications. In essence, it contributes meaningfully to the preparation of students for the critical decisions that lie ahead, fostering a more informed and confident approach to their career paths.
+
+# Explain your data
+We found our data from the OECD website of the UW library, where OECD data is a new data service website that is still in Beta. OECD resource showcases 160 frequently sought-after indicators. Since our topic is around job decisions, which is a subject with great concern, by especially for undergraduate students who are facing graduating and finding a job, the OECD resource is one of the best platforms providing the most updated data. This platform also encourages users to explore, compare, and disseminate the latest OECD data through diverse formats such as charts, maps, tables, and associated publications, which provide a more direct way for different variables and relationships.
+We chose to use these datasets because, with the merging data, we have the information on people’s employment rate information relating to their age and educational level, which is what our topic is attached to. With datasets, undergraduate students would be able to make their own decisions about studying for a higher level of education or starting to find work.
+
+The link for the resource is https://data.oecd.org/emp/employment-rate.htm#indicator-chart
+We picked two indicators related to the topic of employment. The first data is about the employment rate by age group, which was sourced from “Labor market statistics” and “data warehouse”, and the second data having information about employment rate by education level was sourced from “Educational attainment and labor-force status” and “data warehouse” as well. Each group member in our groups picked a couple of datasets from all the datasets resourcing related to our topic, employment. Out of all 7 datasets we found, we picked the one that’s related to age and education level.
+
+The two datasets we picked are freely accessible to everyone. The employment rate by age group is the information about an employee’s age and their employment rate. Where employment rate is measured by the percent of employed people in the desired age group of a total number of people in the same age group. The employment rate by education level is about the total employment number as a proportion of the population of working age.
+
+```{r}
+by_age_group <- read.csv("data/employment_rate_by_age.csv") %>% 
+  filter(LOCATION %in% c("CZE", "FRA", "JPN", "AUS", "MEX", "RUS")) %>%
+  select(LOCATION, SUBJECT, TIME, Value) %>%
+  mutate(TIME = as.integer(substr(TIME, 1, 4))) %>% 
+ rename(age_group = SUBJECT, age_employment_rate = Value) %>% 
+    arrange(age_group) 
+```
+
+```{r}
+by_education <- read.csv("data/employment_rate_by_education.csv") %>% 
+  filter(LOCATION %in% c("CZE", "FRA", "JPN", "AUS", "MEX", "RUS")) %>%
+  select(LOCATION, SUBJECT, TIME, Value) %>% 
+  rename(educ_level = SUBJECT, educ_employment_rate = Value)
+```
+
+The total population for both datasets is the total number of employed people who have reported at least one hour of work in the past week or have a formal job attachment even if they were absent for the past one week. The sample is employed from Australia, the Czech Republic, France, Japan, Mexico, and Russia. We did not catch any ethical issues while reviewing and applying those data. Each row represents each employee’s employment rate by their age and employment rate by their educational level.
+
+We had 5 observations. First, we found that for young age groups, the employment rate by age for some countries like Czech, Russia, and Mexico has a decreasing trend over the years, and none of the countries in our samples have obvious increasing trends. Our second observation was that for all countries we observed, the higher the education level is, the higher the employment rate. The third observation is kind of attached to the second one, showing clearly the gap in employment, which directs to different education levels. We also found that since people in Japan all have the highest educational level, the Japanese employment rate is comparingly higher than all other countries. Our last observation is that the youngest people have the lowest employment rate, and people aged 25-54 have the highest employment rate.
+
+We have employment rate by their age (age_employment_rate) and employment rate by their educational level (educ_employment_rate). Each row also contains information for every employee’s working location (LOCATION), time of year that the information was collected (TIME), age group of each employee (age_group_, age category that identifies employees as young, adults, or elders (age_category). We also have the age interval that’s calculated for each age group(age_interval), and the average employment rate by both age and education level for each employee (avg). To attain better data, we have already dismissed the NA values while we were merging the two datasets. Therefore, we did not encounter any missing values for our resulting data. We did not see any quality issues for our merged datasets.
+
+# Discuss your methods
+
+Our final dataset's variables were carefully selected to represent relevant facets of the connection between age, employment, and education. Incorporating the "age_category" variable proved to be a pivotal choice for grouping people into three separate categories (Young, Adults, and Elder) according to their "age_group." This categorical variable helps identify patterns related to different phases of life by enabling a more clear analysis of employment trends within particular age categories. The average employment rate, which takes age and education into account, is represented by the variable "Avg." The goal of this metric is to give a thorough assessment of how age and education together affect employment rates. "age_interval" provides important insights into the distribution of ages within these age groups by quantifying the age span within each age category.
+
+We began our data processing by loading the employment rates datasets by age group and level of education, with a focus on the following countries: CZE, FRA, JPN, AUS, MEX, and RUS. This choice makes it possible to examine these nations' distinctive qualities in greater detail and makes for insightful comparisons. Important phases in our data processing were renaming and organizing the data. Consistency and clarity were priorities when deciding which columns to change, especially because the variable names in the original datasets were the same. By renaming the variables, we were able to differentiate between those from the age and education datasets and make sure that the combined dataset had a separate identity. The joining of datasets through the use of “left_join” was essential for creating a unified dataset that integrates information on education and age. The need to perform a thorough analysis that takes into account the combined effects of age and education on employment rates is what drove this step. The final dataset, called "clean_data," serves as the foundation for the analysis and visualization that follows. "Ifelse" and "mutate" statements were used to create new category variables. We can classify three distinct age groups into three categories by utilizing "ifelse." 
+
+The impact of data quality is what allows for the choice to use "na.omit" to eliminate missing values. Although incomplete data may provide some insights, our method places a higher priority on analysis accuracy. By ensuring that unique rows are kept, the "distinct" option helps to preserve the dataset's integrity by avoiding information duplication.
+
+When it comes to statistical techniques, our analysis mostly uses simple descriptive statistics. The development of summary metrics, such as "avg," provides a simple yet efficient method for identifying patterns and trends in the data. Utilizing "group_by" and "summarize" to compute the average is consistent in reducing the information for a more clear overview.
+
+We made use of the strong data visualization features offered by the "ggplot2" package in our investigation. Visualization provides information about relationships, patterns, and trends that may not be immediately clear from raw data. We used "ggplot2" to create a range of plots that visually represented the many features of the data, making our findings easier to understand and communicate. The visual representation of employment rates across age groups and educational levels is offered by the "geom_histogram". By comparing these nations side by side, the usage of "facets" allows us to create one histogram for each country. The 15–24 age group is the focus of the scatter plot "geom_point," which shows how employment rates vary over time within this particular group. The "facets" enable us to track patterns that are unique to each nation, identifying possible differences in the dynamics of employment.
+
+We were able to examine the dataset's multidimensional features through the use of facets, colors, and other plot styles, which made it possible to analyze the results in a more complex manner.
+
+```{r}
+combine_data <- left_join(by_education, by_age_group) %>% 
+  arrange(TIME, na.rm = TRUE)
+clean_data <- na.omit(combine_data) %>% 
+  distinct(LOCATION, educ_level, TIME, age_group, .keep_all = TRUE)
+head(clean_data,5)
+```
+
+```{r}
+clean_data <- clean_data %>%
+  mutate(age_category = ifelse(
+    age_group == "15_24", "Young",
+    ifelse(age_group == "25_54", "Adults",  "Elder")
+  )) %>% 
+  select(LOCATION, educ_level, TIME, educ_employment_rate, age_group, age_employment_rate, age_category)
+```
+
+```{r}
+clean_data <- clean_data %>%
+  mutate(age_interval = ifelse(
+    age_group == "15_24", 24-15,
+    ifelse(age_group == "25_54", 54-25,  64-55)))
+
+summarization <- clean_data %>%
+  group_by(educ_level, TIME) %>%
+  summarise(avg = (educ_employment_rate + age_employment_rate)/2) %>% 
+  mutate(avg)
+
+clean_data <- left_join(clean_data, summarization, by = c("educ_level", "TIME"))
+
+head(clean_data,5)
+```
+
+# Talk about your results
+
+The employment rates of the 15–24 age group in Russia, Mexico, and Czechia show an interesting tendency, as seen in the figure "Employment rate of young age group changes over years." We filtered the graph for only the “young” group since our targeted audience is undergraduates. Employment success in Australia is much higher for younger people, but the rate is fluctuating. Over time, Czechia, Russia, and Mexico have seen a decline in the number of younger workers, and the overall rate is below 50%. This indicates that younger people are choosing not to enter the workforce right away. We conclude that most people may go to further their education for a higher and better employment environment. 
+
+```{r}
+clean_data %>% 
+  filter(age_category == "Young") %>%
+  ggplot(aes(x = TIME, y = age_employment_rate, col = LOCATION)) +
+  geom_line(size = 0.5) +
+  labs(title = "Employment rate of young age group changes over years") 
+```
+
+The "Employment rate changes over time for different education levels" illustrates the differences in employment rates according to the level of education. Interestingly, compared to people with lower education levels, the employment rate for those with tertiary education is consistently greater across all countries. This is consistent with the widespread belief that increasing employability is correlated with higher education levels.  Because of some outliers in the boxplot, The difference in employment rates between upper secondary and tertiary education in Australia and Czechia is narrowing over time. We can say that higher education has not been as dominant in these two countries in recent years.
+
+```{r}
+clean_data %>% 
+  ggplot(aes(x = educ_level, y = educ_employment_rate, col = educ_level)) +
+  geom_boxplot(size = 0.5) +
+  labs(title = "Employment rate changes over time for different education levels") +
+  facet_wrap(~ LOCATION, scales = "free")
+```
+
+```{r}
+clean_data %>% 
+  ggplot(aes(educ_employment_rate)) +
+  geom_histogram(fill = "blue",
+                 col = "gold")+
+  facet_wrap(~ LOCATION, scales = "free") +
+labs(x = "educ employment rate",
+    y = "rating",
+    title = "Employment rate by education level")
+```
+
+A more comprehensive graph of the general trends in employment rates is produced by integrating the insights from the different age groups.  Employment rates significantly rise after the age of 25, indicating that people have a higher chance of finding work as they get older. The difference between the two countries becomes clear: Australia has an employment rate above 60%, whereas Czechia has less than 30% of young people opting to work. Numerous factors this, such as cultural standards, educational systems, and economic conditions, could be responsible for this disparity.
+
+```{r}
+clean_data %>% 
+  ggplot(aes(x = TIME, y = age_employment_rate, col = LOCATION)) +
+  geom_point(size = 0.7) +
+  geom_line()+
+  labs(title = "Employment rate changes by age group over years") +
+  facet_wrap(~ age_group, scales = "free") 
+```
+
+```{r}
+clean_data %>% 
+  ggplot(aes(age_employment_rate)) +
+  geom_histogram(fill = "purple",
+                 col = "gold")+
+  facet_wrap(~ age_group, scales = "free") +
+labs(x = "age employment rate",
+    y = "rating",
+    title = "Employment rate by age")
+```
+
+The data highlights the effects of age and education on employability and provides a narrative of changing employment dynamics. In several nations, younger people are choosing to pursue higher education, which is changing the job market for those between the ages of 15 and 24. The global trend of advanced education's growing value in job markets is reaffirmed by the positive correlation between employment rates and higher education levels.
+
+# Discuss your findings
+The data analysis yields nuanced insights into the questions posed in the introduction and the overarching storyline. Specifically, the results highlight a discernible trend in Australia, indicating higher employment rates among adults with tertiary education, suggesting a robust correlation between higher education levels and employability. While this correlation is not an absolute statement, the majority of the statistics support the idea that a positive relationship exists between education levels and success in the job market. This correlation is attributed to the heightened competitiveness in society for limited labor positions, thereby increasing the demand for employees with higher education.
+
+In terms of the relationship between employment rates and age, the data reveals that, on a macro level, the population within the age range of 25-54 generally exhibits the highest employment rates, while the 15-24 age group registers a comparatively lower employment rate. This underscores that employment rates favor the younger demographic, albeit not exclusively the young.
+
+The third question, which concerns whether the level of tertiary education guarantees improved employment prospects in each country, can be concluded from the data plots, where the overall trend shows a positive correlation between the two. The maximum employment rate in terms of educational level varies from country to country, and the maximum employment rate tends to be associated with the "TRY" category, which is also the highest level of educational level, which represents the fact that the level of educational level affects the employment rate.
+
+Considering these results, the narrative surrounding Jamie's dilemma takes shape. The data suggests that continually pursuing a graduate degree in computer science may be a favorable route for him, aligning with the statistical evidence that employers do favor students with higher educational levels. This nuanced interpretation of the data adds depth to Jamie's story, offering a data-driven perspective on the potential outcomes of his decision-making process.
+
+While Jamie's account provides a close-to-home example, it fails to summarize the different experiences and factors that influence each student's decision. Variables such as personal interests, specific job market conditions, varying effects of the education system, and trends in specific industries are not adequately considered. In addition, the report is based on general trends that may not accurately reflect individual outcomes. Thus, while it may highlight common themes, it cannot predict or represent all possible scenarios in the delicate area of education and employment.
+
+In future research endeavors, I plan to expand the scope of data collection to include more countries. Additionally, I intend to delve into the employment rates specific to different majors. This is essential as it is widely acknowledged that the job market for STEM majors tends to be more favorable compared to that of Arts majors, given the rapid development in the technology field. By incorporating data from a more diverse range of countries and exploring employment rates across various academic disciplines, the research aims to provide a more comprehensive understanding of how educational and professional outcomes vary globally and within distinct fields of study. This expanded dataset will contribute to a richer analysis, offering valuable insights into the nuanced dynamics of employment and education on an international scale.
+
+# Summary
+In summary, there’s a decreasing trend of young people getting employed in some countries, and no increasing trends for any other countries. Therefore, we don’t recommend young adults who are aging less than 24 years old to start to find a job while they are facing the opportunity and decision to also keep their academic level higher.  From the observations, we see that people aged 25-54 have the highest employment rate, and people aged higher than 55 have the second highest employment rate. Here is an even better suggestion for if students should try to reach graduate school rather than search for jobs after their graduation in undergraduate studies.
+
+From our study of people’s employment rate by their educational level, we see that tertiary education, which is the highest education level in our dataset, gets people the highest employment rate than other levels of education, and that upper secondary educational level gets the second highest employment rate. We see a positive correlation between education and employability for all countries in our sample, showing that with a higher educational level, the rate would also be higher.
+
+As a takeaway, if students have the opportunity of having a higher education after undergraduate, we do encourage them to try to reach for as high an academic level as they can reach to earn a better job and be more likely to get employed. It’s not the best choice to harsh into their careers, where they would not get such a high employment rate while they were younger than 24 anyway.
