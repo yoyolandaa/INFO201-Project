@@ -1,0 +1,63 @@
+---
+title: "clean data"
+author: "Christine, Allison, Yolanda"
+date: "2023-12-08"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+library(tidyverse)
+library(dplyr)
+library(ggplot2)
+options(warn = -1)
+```
+
+```{r}
+by_age_group <- read.csv("data/employment_rate_by_age.csv") %>% 
+  filter(LOCATION %in% c("CZE", "FRA", "JPN", "AUS", "MEX", "RUS")) %>%
+  select(LOCATION, SUBJECT, TIME, Value) %>%
+  mutate(TIME = as.integer(substr(TIME, 1, 4))) %>% 
+ rename(age_group = SUBJECT, age_employment_rate = Value) %>% 
+    arrange(age_group) 
+```
+
+```{r}
+by_education <- read.csv("data/employment_rate_by_education.csv") %>% 
+  filter(LOCATION %in% c("CZE", "FRA", "JPN", "AUS", "MEX", "RUS")) %>%
+  select(LOCATION, SUBJECT, TIME, Value) %>% 
+  rename(educ_level = SUBJECT, educ_employment_rate = Value)
+```
+
+```{r}
+combine_data <- left_join(by_education, by_age_group) %>% 
+  arrange(TIME, na.rm = TRUE)
+clean_data <- na.omit(combine_data) %>% 
+  distinct(LOCATION, educ_level, TIME, age_group, .keep_all = TRUE)
+head(clean_data,5)
+```
+
+```{r}
+clean_data <- clean_data %>%
+  mutate(age_category = ifelse(
+    age_group == "15_24", "Young",
+    ifelse(age_group == "25_54", "Adults",  "Elder")
+  )) %>% 
+  select(LOCATION, educ_level, TIME, educ_employment_rate, age_group, age_employment_rate, age_category)
+```
+
+```{r}
+clean_data <- clean_data %>%
+  mutate(age_interval = ifelse(
+    age_group == "15_24", 24-15,
+    ifelse(age_group == "25_54", 54-25,  64-55)))
+
+summarization <- clean_data %>%
+  group_by(educ_level, TIME) %>%
+  summarise(avg = (educ_employment_rate + age_employment_rate)/2) %>% 
+  mutate(avg)
+
+clean_data <- left_join(clean_data, summarization, by = c("educ_level", "TIME"))
+
+head(clean_data, 10)
+```
